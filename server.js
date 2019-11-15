@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const passport = require('passport');
 // const logger = require('morgan');
 
-// const users = require('./routes/api/users');
+const users = require('./routes/api/users');
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -14,8 +14,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 //Make public a static folder 
-// app.use(express.static("public"));
-// app.use("/api", routes);
+app.use(express.static("public"));
+app.use("/api", routes);
 
 
 const db = require("./config/keys").mongoURI;
