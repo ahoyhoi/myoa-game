@@ -45,7 +45,7 @@
     },
     {
         "id": "starter3",
-        "description": "I should sleep on it.  I don’t want to make any rash decisions. I’ll think about it tonight.",
+        "description": "I should sleep on it.  I cdon’t want to make any rash decisions. I’ll think about it tonight.",
         "paths": [{
             "targetid": "starter5",
             "buttonText": ""
