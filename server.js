@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 //Make public a static folder 
 app.use(express.static("public"));
-app.use("/api", routes);
+// app.use("/api", routes);
 
 
 const db = require("./config/keys").mongoURI;
